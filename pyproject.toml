@@ -1,0 +1,19 @@
+[project]
+name = "back-lt-pedidos"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "fastapi[standard,standart]>=0.116.1",
+    "matplotlib>=3.10.6",
+    "openpyxl>=3.1.5",
+    "pandas>=2.3.2",
+    "xlrd>=2.0.2",
+]
+
+[dependency-groups]
+dev = [
+    "black>=25.1.0",
+    "pytest>=8.4.2",
+]
