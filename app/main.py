@@ -32,7 +32,7 @@ def create_new_order(order: OrderIn):
 
 @app.get('/order')
 def get_all_orders() -> list[OrderBase] | dict:    
-    print(orders)
+    print(orders, end=" ")
     if not orders:
         return {
             'message': 'Ainda não existem Pedidos Cadastrados'
