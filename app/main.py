@@ -1,5 +1,5 @@
 from fastapi import FastAPI
-from app.schemas import OrderBase,OrderIn, SupplierBase, SupplierIn
+from app.models.schemas import OrderBase,OrderIn, SupplierBase, SupplierIn
 
 
 app = FastAPI(title='API LT Pedidos', description='API para importar e criar PDFs de arquivos em EXCELL', version="1.0.0")
