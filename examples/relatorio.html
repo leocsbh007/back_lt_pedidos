@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Ordem de Compra</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 2cm;
+      color: #333;
+      font-size: 13px;
+    }
+
+    header {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 20px;
+      font-weight: bold;
+    }
+
+    header h2 {
+      margin: 5px 0;
+      font-size: 16px;
+      text-transform: uppercase;
+    }
+
+    .info-grid {
+      width: 100%;
+      margin-bottom: 20px;
+    }
+
+    .info-grid td {
+      padding: 4px 8px;
+      font-size: 13px;
+    }
+
+    .info-grid td.label {
+      font-weight: bold;
+      width: 160px;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 15px;
+    }
+
+    table, th, td {
+      border: 1px solid #999;
+    }
+
+    th, td {
+      padding: 6px;
+      text-align: left;
+      font-size: 12px;
+    }
+
+    th {
+      background: #f2f2f2;
+      text-align: center;
+    }
+
+    .totals {
+      margin-top: 20px;
+      width: 100%;
+      border-collapse: collapse;
+    }
+
+    .totals td {
+      padding: 6px 8px;
+      font-size: 13px;
+    }
+
+    .totals .label {
+      font-weight: bold;
+      text-align: right;
+      width: 200px;
+    }
+
+    footer {
+      text-align: center;
+      font-size: 11px;
+      margin-top: 30px;
+      color: #666;
+    }
+
+    /* Configurações para impressão */
+    @page {
+      size: A4;
+      margin: 2cm;
+    }
+
+    @media print {
+      body { margin: 0; }
+      table, th, td { font-size: 11px; }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>GRUPO LT TECNOLOGIA</h1>
+    <h2>LT TECNOLOGIA LTDA – ORDEM DE COMPRA</h2>
+    <p>CNPJ: 15.386.994/0001-01</p>
+    <p>32223-450 - CONTAGEM - MG</p>
+  </header>
+
+  <table class="info-grid">
+    <tr>
+      <td class="label">Documento</td>
+      <td>0000000130</td>
+      <td class="label">Fornecedor</td>
+      <td>MCOMP TECNOLOGIA IMPORTACAO E EXPORTACAO LTDA</td>
+    </tr>
+    <tr>
+      <td class="label">CNPJ</td>
+      <td>49.767.396/0001-96</td>
+      <td class="label">Data da Cotação</td>
+      <td>23/09/2025</td>
+    </tr>
+    <tr>
+      <td class="label">Data de Validade</td>
+      <td>24/10/2025</td>
+      <td class="label">Forma de Pagamento</td>
+      <td>30/45/60 DDL</td>
+    </tr>
+  </table>
+
+  <table>
+    <thead>
+      <tr>
+        <th>Produtos</th>
+        <th>Quantidade</th>
+        <th>UM</th>
+        <th>Valor Unitário R$</th>
+        <th>Total Item R$</th>
+        <th>Prazo (dias)</th>
+        <th>Data Entrega</th>
+        <th>IPI %</th>
+        <th>ICMS-ST %</th>
+        <th>Frete R$</th>
+        <th>Total R$</th>
+        <th>Observação</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>C.I OPTO MOC207 SOIC-8</td>
+        <td>100,0000</td>
+        <td>UN</td>
+        <td>R$ 1,8646</td>
+        <td>R$ 186,46</td>
+        <td>31</td>
+        <td>2025-10-24</td>
+        <td>0,00</td>
+        <td>0,00</td>
+        <td>0</td>
+        <td>R$ 0,00</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>C.I MCU ATSAMC21E15A TQFP32</td>
+        <td>100,0000</td>
+        <td>UN</td>
+        <td>R$ 24,1869</td>
+        <td>R$ 2.418,69</td>
+        <td>31</td>
+        <td>2025-10-24</td>
+        <td>0,00</td>
+        <td>0,00</td>
+        <td>0</td>
+        <td>R$ 0,00</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>RELE 5V 10A 1REV # SRD-05VDC-L-A</td>
+        <td>100,0000</td>
+        <td>UN</td>
+        <td>R$ 2,0777</td>
+        <td>R$ 207,77</td>
+        <td>31</td>
+        <td>2025-10-24</td>
+        <td>0,00</td>
+        <td>0,00</td>
+        <td>0</td>
+        <td>R$ 0,00</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>CHAVE FIM CURSO METAL ALAV C/ROLD - IEHC # XCK-M141</td>
+        <td>50,0000</td>
+        <td>UN</td>
+        <td>R$ 33,0300</td>
+        <td>R$ 1.651,50</td>
+        <td>31</td>
+        <td>2025-10-24</td>
+        <td>0,00</td>
+        <td>0,00</td>
+        <td>0</td>
+        <td>R$ 0,00</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>CHAVE FIM CURSO METAL ALAV C/ROLD - NSXH # XCKN2145P20C</td>
+        <td>50,0000</td>
+        <td>UN</td>
+        <td>R$ 30,3600</td>
+        <td>R$ 1.518,00</td>
+        <td>31</td>
+        <td>2025-10-24</td>
+        <td>0,00</td>
+        <td>0,00</td>
+        <td>0</td>
+        <td>R$ 0,00</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+  <table class="totals">
+    <tr>
+      <td class="label">Total Itens:</td>
+      <td>R$ 5.982,42</td>
+      <td class="label">Total Frete:</td>
+      <td>R$ 0,00</td>
+      <td class="label">Total Impostos:</td>
+      <td>R$ 0,00</td>
+    </tr>
+  </table>
+
+  <footer>
+    Documento gerado automaticamente — Ordem de Compra
+  </footer>
+
+</body>
+</html>
